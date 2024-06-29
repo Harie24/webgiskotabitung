@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        #map {
+            width: 1066px;
+            height: 619px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/KotaBitungTOPONIMI_PT_50Kshp_1.js"></script><script src="layers/KotaBitungTEMPATSAMPAHAKHIR_PT_50Kshp_2.js"></script><script src="layers/KotaBitungTAMBANGAN_PT_50Kshp_3.js"></script><script src="layers/KotaBitungSUNGAI_LN_50Kshp_4.js"></script><script src="layers/KotaBitungSUNGAI_AR_50Kshp_5.js"></script><script src="layers/KotaBitungSTASIUNRADIO_PT_50Kshp_6.js"></script><script src="layers/KotaBitungSPOTHEIGHT_PT_50Kshp_7.js"></script><script src="layers/KotaBitungSPBU_PT_50Kshp_8.js"></script><script src="layers/KotaBitungPENDIDIKAN_AR_50Kshp_9.js"></script><script src="layers/KotaBitungPEMUKIMAN_AR_50Kshp_10.js"></script><script src="layers/KotaBitungPEMERINTAHAN_AR_50Kshp_11.js"></script><script src="layers/KotaBitungPELABUHAN_PT_50Kshp_12.js"></script><script src="layers/KotaBitungPARKIR_PT_50Kshp_13.js"></script><script src="layers/KotaBitungPANCARTV_PT_50Kshp_14.js"></script><script src="layers/KotaBitungMENARATELPON_PT_50Kshp_15.js"></script><script src="layers/KotaBitungMENARALISTRIK_PT_50Kshp_16.js"></script><script src="layers/KotaBitungKELOLALIMBAH_PT_50Kshp_17.js"></script><script src="layers/KotaBitungKANTORSTASKOMBUMI_PT_50Kshp_18.js"></script><script src="layers/KotaBitungKANTORPOS_PT_50Kshp_19.js"></script><script src="layers/KotaBitungKANTORPLN_PT_50Kshp_20.js"></script><script src="layers/KotaBitungKANTORAIRMINUM_PT_50Kshp_21.js"></script><script src="layers/KotaBitungKABELLISTRIK_LN_50Kshp_22.js"></script><script src="layers/KotaBitungJEMBATAN_PT_50Kshp_23.js"></script><script src="layers/KotaBitungJEMBATAN_LN_50Kshp_24.js"></script><script src="layers/KotaBitungJALAN_LN_50Kshp_25.js"></script><script src="layers/KotaBitungIRIGASI_LN_50Kshp_26.js"></script><script src="layers/KotaBitungHIDRANUMUM_PT_50Kshp_27.js"></script><script src="layers/KotaBitungGORONG_PT_50Kshp_28.js"></script><script src="layers/KotaBitungGENLISTRIK_PT_50Kshp_29.js"></script><script src="layers/KotaBitungGARISRPANTAI_LN_50Kshp_30.js"></script><script src="layers/KotaBitungDERMAGA_PT_50Kshp_31.js"></script><script src="layers/KotaBitungDEPOMINYAK_PT_50Kshp_32.js"></script><script src="layers/KotaBitungDEPOGAS_PT_50Kshp_33.js"></script><script src="layers/KotaBitungBANGUNAN_PT_50Kshp_34.js"></script><script src="layers/KotaBitungADMINISTRASIKECAMATAN_LN_50Kshp_35.js"></script><script src="layers/KotaBitungADMINISTRASIKABKOTA_LN_50Kshp_36.js"></script>
+        <script src="styles/KotaBitungTOPONIMI_PT_50Kshp_1_style.js"></script><script src="styles/KotaBitungTEMPATSAMPAHAKHIR_PT_50Kshp_2_style.js"></script><script src="styles/KotaBitungTAMBANGAN_PT_50Kshp_3_style.js"></script><script src="styles/KotaBitungSUNGAI_LN_50Kshp_4_style.js"></script><script src="styles/KotaBitungSUNGAI_AR_50Kshp_5_style.js"></script><script src="styles/KotaBitungSTASIUNRADIO_PT_50Kshp_6_style.js"></script><script src="styles/KotaBitungSPOTHEIGHT_PT_50Kshp_7_style.js"></script><script src="styles/KotaBitungSPBU_PT_50Kshp_8_style.js"></script><script src="styles/KotaBitungPENDIDIKAN_AR_50Kshp_9_style.js"></script><script src="styles/KotaBitungPEMUKIMAN_AR_50Kshp_10_style.js"></script><script src="styles/KotaBitungPEMERINTAHAN_AR_50Kshp_11_style.js"></script><script src="styles/KotaBitungPELABUHAN_PT_50Kshp_12_style.js"></script><script src="styles/KotaBitungPARKIR_PT_50Kshp_13_style.js"></script><script src="styles/KotaBitungPANCARTV_PT_50Kshp_14_style.js"></script><script src="styles/KotaBitungMENARATELPON_PT_50Kshp_15_style.js"></script><script src="styles/KotaBitungMENARALISTRIK_PT_50Kshp_16_style.js"></script><script src="styles/KotaBitungKELOLALIMBAH_PT_50Kshp_17_style.js"></script><script src="styles/KotaBitungKANTORSTASKOMBUMI_PT_50Kshp_18_style.js"></script><script src="styles/KotaBitungKANTORPOS_PT_50Kshp_19_style.js"></script><script src="styles/KotaBitungKANTORPLN_PT_50Kshp_20_style.js"></script><script src="styles/KotaBitungKANTORAIRMINUM_PT_50Kshp_21_style.js"></script><script src="styles/KotaBitungKABELLISTRIK_LN_50Kshp_22_style.js"></script><script src="styles/KotaBitungJEMBATAN_PT_50Kshp_23_style.js"></script><script src="styles/KotaBitungJEMBATAN_LN_50Kshp_24_style.js"></script><script src="styles/KotaBitungJALAN_LN_50Kshp_25_style.js"></script><script src="styles/KotaBitungIRIGASI_LN_50Kshp_26_style.js"></script><script src="styles/KotaBitungHIDRANUMUM_PT_50Kshp_27_style.js"></script><script src="styles/KotaBitungGORONG_PT_50Kshp_28_style.js"></script><script src="styles/KotaBitungGENLISTRIK_PT_50Kshp_29_style.js"></script><script src="styles/KotaBitungGARISRPANTAI_LN_50Kshp_30_style.js"></script><script src="styles/KotaBitungDERMAGA_PT_50Kshp_31_style.js"></script><script src="styles/KotaBitungDEPOMINYAK_PT_50Kshp_32_style.js"></script><script src="styles/KotaBitungDEPOGAS_PT_50Kshp_33_style.js"></script><script src="styles/KotaBitungBANGUNAN_PT_50Kshp_34_style.js"></script><script src="styles/KotaBitungADMINISTRASIKECAMATAN_LN_50Kshp_35_style.js"></script><script src="styles/KotaBitungADMINISTRASIKABKOTA_LN_50Kshp_36_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
